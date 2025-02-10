@@ -8,9 +8,9 @@ $fullName = "'{$lastname} {$firstname} {$middlename}'";
 $fullName = ucwords($fullName);
 
 
-$sublastname = substr($lastname, 0, 2);
-$subfirstname = substr($firstname, 0, 2);
-$submiddlename = substr($middlename, 0, 2);
+$sublastname = mb_substr($lastname, 0, 1);
+$subfirstname = mb_substr($firstname, 0, 1);
+$submiddlename = mb_substr($middlename, 0, 1);
 
 $fio = "'{$sublastname}{$subfirstname }{$submiddlename}'";
 $fio = strtoupper($fio);
