@@ -20,6 +20,6 @@ $surnameAndInitials = ucwords($surnameAndInitials);
 
 echo "Полное имя: '{$fullName}'". PHP_EOL;
 echo "Фамилия и инициалы: '{$surnameAndInitials}'". PHP_EOL;
-echo "Аббревиатура: {$fio}". PHP_EOL;
+echo "Аббревиатура: {$fio}\\". PHP_EOL;
 
 ?>
