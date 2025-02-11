@@ -1,9 +1,9 @@
 <?php
 
 $stdin = fopen("php://stdin", "r");
-$lastname  = gets($stdin);
-$firstname = gets($stdin);
-$middlename = gets($stdin);
+$lastname  = fgets($stdin);
+$firstname = fgets($stdin);
+$middlename = fgets($stdin);
 fclose($stdin);
 
 $lastname = mb_ucfirst($lastname);
