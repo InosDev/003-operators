@@ -1,15 +1,16 @@
 <?php
 
-$lastname = "иванов";
-$firstname = "иван";
-$middlename  = "иванович";
+$stdin = fopen("php://stdin", "r");
+$lastname  = gets($stdin);
+$firstname = gets($stdin);
+$middlename = gets($stdin);
+fclose($stdin);
 
 $lastname = mb_ucfirst($lastname);
 $firstname = mb_ucfirst($firstname);
 $middlename = mb_ucfirst($middlename);
 
 $fullName = "'{$lastname} {$firstname} {$middlename}'";
-
 
 $sublastname = mb_substr($lastname, 0, 1);
 $subfirstname = mb_substr($firstname, 0, 1);
